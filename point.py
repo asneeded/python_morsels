@@ -7,6 +7,11 @@ class Point:
         self.y = y
         self.z = z
 
+    def __iter__(self):
+        yield self.x
+        yield self.y
+        yield self.z        
+
     def __repr__(self):
         return f"Point(x={self.x}, y={self.y}, z={self.z})"
 
