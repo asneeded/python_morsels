@@ -2,8 +2,11 @@ def parse_ranges(ranges):
     for number in ranges.split(','):
         if '-' in number:
             first, last = number.split('-')
-            for item in range(int(first), int(last)+1):
-                yield item
+            if last.isnumeric():
+                for item in range(int(first), int(last)+1):
+                    yield item
+            else:
+                yield int(first)
         else:
             yield int(number)
             
