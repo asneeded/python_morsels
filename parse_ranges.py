@@ -9,9 +9,14 @@ def parse_ranges(ranges):
             
 
 # def parse_ranges(ranges):
-#     return ( number for number in ranges.split(',')  )
-    
-    
+#     for number in ranges.split(','):
+#         first, found, last = number.partition('-')
+#             if found:
+#                 (use range(int(first), int(last)+1))
+#                     yield item
+#             else:
+#                 yield int(number)
+            
 
 
 
