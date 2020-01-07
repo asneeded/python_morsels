@@ -34,7 +34,7 @@ class InterleaveTests(unittest.TestCase):
         self.assertIterableEqual(interleave(in1, in2), out)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    #@unittest.expectedFailure
     def test_non_sequences(self):
         in1 = [1, 2, 3, 4]
         in2 = (n**2 for n in in1)
@@ -42,7 +42,7 @@ class InterleaveTests(unittest.TestCase):
         self.assertIterableEqual(interleave(in1, in2), out)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    #@unittest.expectedFailure
     def test_response_is_iterator(self):
         in1 = [1, 2, 3]
         in2 = [4, 5, 6]

@@ -1,10 +1,12 @@
 
 def interleave(first, second):
     final = []
+    second = list(second)
     for key, value in enumerate(first):
         final.extend([value, second[key]])
-    
+        #yield([value, second[key]])
     return final
+    
 
 
 
